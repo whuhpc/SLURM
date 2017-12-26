@@ -6,7 +6,7 @@ Test Commands
 
 - **slurm-commands.sh**: 包含许多SLURM命令的例子，以及如何定制每个命令的输出
 
-Test Scripts
+Test Scripts. 
 ------------
 
 如果要提交这些脚本，请确保在使用前更改电子邮件。
@@ -30,11 +30,8 @@ Test Scripts
 
 - **openmp-job/** 多线程作业示例， 该作业运行一个简单的具有多线程的OpenMP向量加法程序。多线程作业通常只在单个节点上运行，并且只需要一个任务(即进程)，它会生成一组线程来在多个CPU内核中执行。 在多线程程序中必需有 --cpus-per-task 选项。
 
-- **epilog/** Epilog example. This job demonstrates how to invoke an epilog script after
-your job for post-processing. This particular example looks for any files in your directory
-that exceed 3 megabytes and compresses and archives those files. In practice, you might tweak
-this to only compress larger files and to exclude any large input files you do not wish to compress.
+- **epilog/** Epilog作业示例， 演示如何在作业后调用一个epilog脚本，进行后期处理。这个特定的示例将查找目录中超过3兆的文件，并压缩和归档这些文件。在实践中，您可能会调整这一操作，只压缩较大的文件，并排除任何您不希望压缩的大型文件。
 
-- **slurm-ception/** Cool example but use with caution!
+- **slurm-ception/** 很酷的例子，但是要小心使用!
 
-- **julia-job/** Example of running Julia on the cluster in serial and in parallel.
+- **julia-job/** 作业示例，以串行和并行方式在群集上运行Julia。
