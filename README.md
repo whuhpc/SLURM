@@ -4,8 +4,7 @@ SLURM
 Test Commands
 -------------
 
-- **slurm-commands.sh**: contains lots of examples of SLURM commands
-and how to customize the output of each command
+- **slurm-commands.sh**: 包含许多SLURM命令的例子，以及如何定制每个命令的输出
 
 Test Scripts
 ------------
