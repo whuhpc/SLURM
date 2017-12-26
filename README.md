@@ -26,12 +26,9 @@ Test Scripts
 
 - **gpu-job/** GPU作业示例，该脚本加载了在NVIDIA GPU上运行的分子动力学软件包HOOMD-Blue。
 
-- **pthread-job/** 多线程作业示例. 这项作业运行一个简单的Hello World Posix线程C代码。多线程作业通常只在单个节点上运行，并且只需要一个任务(即进程)，它会生成一组线程来在多个CPU内核中执行。 在多线程程序中必需有 --cpus-per-task 选项。
+- **pthread-job/** 多线程作业示例, 这项作业运行一个简单的Hello World Posix线程C代码。多线程作业通常只在单个节点上运行，并且只需要一个任务(即进程)，它会生成一组线程来在多个CPU内核中执行。 在多线程程序中必需有 --cpus-per-task 选项。
 
-- **openmp-job/** Multithreaded job example. This job runs a simple OpenMP vector addition
-program with multithreading. Multithreaded jobs generally run on a single node and only require
-a single task (i.e. process) that spawns a group of threads to execute across multiple
-CPU cores. The --cpus-per-task option is needed in multithreaded programs.
+- **openmp-job/** 多线程作业示例， 该作业运行一个简单的具有多线程的OpenMP向量加法程序。多线程作业通常只在单个节点上运行，并且只需要一个任务(即进程)，它会生成一组线程来在多个CPU内核中执行。 在多线程程序中必需有 --cpus-per-task 选项。
 
 - **epilog/** Epilog example. This job demonstrates how to invoke an epilog script after
 your job for post-processing. This particular example looks for any files in your directory
