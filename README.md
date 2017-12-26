@@ -18,19 +18,15 @@ Test Scripts
 
 - **python-job/**  演示一个简单的Python作业，使用一个CPU核心。
 
-- **mpi-job/**  一个MPI作业的例子，运行在3个节点和24个CPU内核上。还包括一个简单的MPI c++代码，以及一个编译脚本。
+- **mpi-job/**  MPI作业示例，运行在3个节点和24个CPU内核上。还包括一个简单的MPI c++代码，以及一个编译脚本。
 
 - **job-array/**  作业数组示例， 演示如何并行地在多个类似的输入脚本上运行可执行文件。
 
 - **job-array2/** 另一个作业数组示例， 除非在这种情况下，处理被简化为文件名称(由Python分析)，不需要遵循常规的命名方案。实际上，文件名完全是任意的，用户只需将它们放在一个名为 * **data** * 的子目录中，然后将数组调整到适当的长度。
 
-- **gpu-job/** GPU job example. This script loads HOOMD-Blue, a molecular dynamics
-package that runs on NVIDIA GPUs.
+- **gpu-job/** GPU作业示例，该脚本加载了在NVIDIA GPU上运行的分子动力学软件包HOOMD-Blue。
 
-- **pthread-job/** Multithreaded job example. This job runs a simple Hello World Posix
-threads C code. Multithreaded jobs generally run on a single node and only require
-a single task (i.e. process) that spawns a group of threads to execute across multiple
-CPU cores. The --cpus-per-task option is needed in multithreaded programs.
+- **pthread-job/** 多线程作业示例. 这项作业运行一个简单的Hello World Posix线程C代码。多线程作业通常只在单个节点上运行，并且只需要一个任务(即进程)，它会生成一组线程来在多个CPU内核中执行。 在多线程程序中必需有 --cpus-per-task 选项。
 
 - **openmp-job/** Multithreaded job example. This job runs a simple OpenMP vector addition
 program with multithreading. Multithreaded jobs generally run on a single node and only require
