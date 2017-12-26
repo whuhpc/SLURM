@@ -9,17 +9,17 @@ Test Commands
 Test Scripts
 ------------
 
-如果要提交这些脚本，请确保更改电子邮件。
+如果要提交这些脚本，请确保在使用前更改电子邮件。
 提交作业到集群：
 
 	sbatch SCRIPT_NAME.slurm
 
 - **srun/** 这会运行一些非常简单的命令。在演示实例中，一个用单个进程，另一个用多进程。
 
-- **python-job/** Demonstrates a simple Python job, using a single CPU core.
+- **python-job/** 演示一个简单的Python作业，使用一个CPU核心。
 
-- **mpi-job/** Example of a MPI job running across 3 nodes and 24 CPU cores.
-A simple MPI C++ code is also included, along with a compile script.
+- **mpi-job/** 一个MPI作业的例子，运行在3个节点和24个CPU内核上。
+还包括一个简单的MPI c++代码，以及一个编译脚本。
 
 - **job-array/** Job array example, showing how to run an executable on multiple
 similar input scripts in parallel.
