@@ -9,14 +9,12 @@ Test Commands
 Test Scripts
 ------------
 
-Make sure to change the email if you want to submit these scripts.
-To submit to the cluster type:
+如果要提交这些脚本，请确保更改电子邮件。
+提交作业到集群：
 
 	sbatch SCRIPT_NAME.slurm
 
-- **srun/** This runs a few very simple commands, one with a single
-process, and another few with multiple processes.
-Demonstrates the use of srun.
+- **srun/** 这会运行一些非常简单的命令。在演示实例中，一个用单个进程，另一个用多进程。
 
 - **python-job/** Demonstrates a simple Python job, using a single CPU core.
 
