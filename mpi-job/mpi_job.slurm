@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --mail-user=<myemail@vanderbilt.edu>
+#SBATCH --mail-user=<myemail@whu.edu.cn>
 #SBATCH --mail-type=ALL
-#SBATCH --nodes=3
-#SBATCH --tasks-per-node=8     # 8 MPI processes per node
+#SBATCH --nodes=3              # 3 nodes
+#SBATCH --tasks-per-node=4     # 4 MPI processes per node
 #SBATCH --time=0-00:10:00      # 10 minutes of wall time
 #SBATCH --mem=1G               # 1 GB RAM per node
 #SBATCH --output=job.log
