@@ -14,21 +14,15 @@ Test Scripts
 
 	sbatch SCRIPT_NAME.slurm
 
-- **srun/** 这会运行一些非常简单的命令。在演示实例中，一个用单个进程，另一个用多进程。
+- **srun/**  这会运行一些非常简单的命令。在演示实例中，一个用单个进程，另一个用多进程。
 
-- **python-job/** 演示一个简单的Python作业，使用一个CPU核心。
+- **python-job/**  演示一个简单的Python作业，使用一个CPU核心。
 
-- **mpi-job/** 一个MPI作业的例子，运行在3个节点和24个CPU内核上。
-还包括一个简单的MPI c++代码，以及一个编译脚本。
+- **mpi-job/**  一个MPI作业的例子，运行在3个节点和24个CPU内核上。还包括一个简单的MPI c++代码，以及一个编译脚本。
 
-- **job-array/** Job array example, showing how to run an executable on multiple
-similar input scripts in parallel.
+- **job-array/**  作业数组示例， 演示如何并行地在多个类似的输入脚本上运行可执行文件。
 
-- **job-array2/** Another job array example, except in this case the processing 
-is simplified further as the file names (being analyzed by Python) do not need to
-follow a regular naming scheme. In fact, the file names are completely arbitrary, 
-the user just has to put them all in a subdirectory called **data** and then adjust
-the array to the appropriate length. 
+- **job-array2/** 另一个作业数组示例， 除非在这种情况下，处理被简化为文件名称(由Python分析)，不需要遵循常规的命名方案。实际上，文件名完全是任意的，用户只需将它们放在一个名为 * *data* * 的子目录中，然后将数组调整到适当的长度。
 
 - **gpu-job/** GPU job example. This script loads HOOMD-Blue, a molecular dynamics
 package that runs on NVIDIA GPUs.
