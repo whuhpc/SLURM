@@ -22,7 +22,7 @@ Test Scripts
 
 - **job-array/**  作业数组示例， 演示如何并行地在多个类似的输入脚本上运行可执行文件。
 
-- **job-array2/** 另一个作业数组示例， 除非在这种情况下，处理被简化为文件名称(由Python分析)，不需要遵循常规的命名方案。实际上，文件名完全是任意的，用户只需将它们放在一个名为 * *data* * 的子目录中，然后将数组调整到适当的长度。
+- **job-array2/** 另一个作业数组示例， 除非在这种情况下，处理被简化为文件名称(由Python分析)，不需要遵循常规的命名方案。实际上，文件名完全是任意的，用户只需将它们放在一个名为 * **data** * 的子目录中，然后将数组调整到适当的长度。
 
 - **gpu-job/** GPU job example. This script loads HOOMD-Blue, a molecular dynamics
 package that runs on NVIDIA GPUs.
